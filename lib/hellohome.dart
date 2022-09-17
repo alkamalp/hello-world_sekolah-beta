@@ -24,7 +24,17 @@ class HelloHome extends StatelessWidget {
           ),
         ],
       ),
-      body: const HelloWidget(),
+      body: Stack(
+        children: [
+          Image.asset(
+            'assets/background.jpeg',
+            fit: BoxFit.cover,
+            height: double.infinity,
+            width: double.infinity,
+          ),
+          const HelloWidget(),
+        ],
+      ),
     );
   }
 }
